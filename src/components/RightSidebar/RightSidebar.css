@@ -11,6 +11,10 @@
   margin: 36px 0 51px 0;
 }
 
+.decorLine {
+  border: 1px solid #eeeeee;
+}
+
 .main_div {
   width: 100%;
   background: #ffffff;

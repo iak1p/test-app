@@ -12,11 +12,6 @@
   letter-spacing: -0.01em;
 }
 
-.decor_line {
-  width: 100%;
-  border: 1px solid #eeeeee;
-}
-
 .info__btn.active {
   background: rgba(22, 192, 152, 0.38);
   border: 1px solid #00b087;

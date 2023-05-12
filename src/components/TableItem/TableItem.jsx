@@ -21,7 +21,7 @@ const TableItem = (props) => {
           )}
         </td>
       </tr>
-      <hr className="decor_line" />
+      <tr className="decorLine"></tr>
     </>
   );
 };

@@ -55,24 +55,28 @@ const RightSidebar = () => {
           </div>
           <div className="main_div_main">
             <table>
-              <tr className="table_header">
-                <td className="table_name">Customer Name</td>
-                <td className="table_company" key="company">
-                  Company
-                </td>
-                <td className="table_number mobile">Phone Number</td>
-                <td className="table_email mobile">Email</td>
-                <td className="table_country status">Country</td>
-                <td className="table_status status">Status</td>
-              </tr>
-              <hr className="decor_line" />
-              {usersAfterSearch.length === 0
-                ? users.map((user) => {
-                    return <TableItem key={user.id} user={user} />;
-                  })
-                : usersAfterSearch?.map((user) => {
-                    return <TableItem key={user.id} user={user} />;
-                  })}
+              <thead>
+                <tr className="table_header">
+                  <td className="table_name">Customer Name</td>
+                  <td className="table_company" key="company">
+                    Company
+                  </td>
+                  <td className="table_number mobile">Phone Number</td>
+                  <td className="table_email mobile">Email</td>
+                  <td className="table_country status">Country</td>
+                  <td className="table_status status">Status</td>
+                </tr>
+                <tr className="decorLine"></tr>
+              </thead>
+              <tbody>
+                {usersAfterSearch.length === 0
+                  ? users.map((user) => {
+                      return <TableItem key={user.id} user={user} />;
+                    })
+                  : usersAfterSearch?.map((user) => {
+                      return <TableItem key={user.id} user={user} />;
+                    })}
+              </tbody>
             </table>
           </div>
           <div className="main_div_footer">
