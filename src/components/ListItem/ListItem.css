@@ -8,17 +8,20 @@
   padding-left: 14px;
 }
 
-.list_item__text::after {
-  content: ">";
-  display: inline;
-  padding-left: 10px;
-}
-
 .list_item_content {
   width: 100%;
-  padding: 14px 0 14px 14px;
+  padding: 14px 0 14px 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.list_item_content__div {
+  display: flex;
+  padding-left: 14px;
+}
+.arrow {
+  padding-right: 14px;
 }
 
 .list_item.active {
@@ -37,7 +40,7 @@
 }
 
 @media screen and (max-width: 870px) {
-  .list_item__text::after {
+  .arrow {
     display: none;
   }
   .list_item__text {

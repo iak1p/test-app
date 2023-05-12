@@ -16,7 +16,7 @@ body {
   background-color: #fafbff;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
   .app {
     flex-direction: column;
   }

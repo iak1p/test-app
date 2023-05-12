@@ -23,12 +23,22 @@ const LeftSidebar = () => {
           <div className="drop-down_list" onClick={dropDown}></div>
         </div>
         <ul className="list">
-          <ListItem text="Dashboard" classList="list_item" type="IconList1" />
-          <ListItem text="Product" classList="list_item" type="IconList2" />
-          <ListItem text="Customers" classList="list_item active" type="IconList3" />
-          <ListItem text="Income" classList="list_item" type="IconList4" />
-          <ListItem text="Promote" classList="list_item" type="IconList5" />
-          <ListItem text="Help" classList="list_item" type="IconList6" />
+          <ListItem
+            text="Dashboard"
+            classList="list_item"
+            type="IconList1"
+            arrow={false}
+          />
+          <ListItem text="Product" classList="list_item" type="IconList2" arrow={true} />
+          <ListItem
+            text="Customers"
+            classList="list_item active"
+            type="IconList3"
+            arrow={true}
+          />
+          <ListItem text="Income" classList="list_item" type="IconList4" arrow={true} />
+          <ListItem text="Promote" classList="list_item" type="IconList5" arrow={true} />
+          <ListItem text="Help" classList="list_item" type="IconList6" arrow={true} />
         </ul>
       </div>
     </div>
