@@ -1,0 +1,23 @@
+p,
+h3,
+span,
+td,
+button,
+div,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  display: flex;
+}
+
+body {
+  background-color: #fafbff;
+}
+
+@media screen and (max-width: 520px) {
+  .app {
+    flex-direction: column;
+  }
+}
